@@ -1,0 +1,4 @@
+repository "LELDOOM@Kexo@cloud"
+  path "/"
+    br "/main"
+    co "/main"
