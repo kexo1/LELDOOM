@@ -32,7 +32,6 @@ Find beers for temporary boosts
 * I made this game as my final school year work, I had to learn basics of Unity and C# by myself
 * Developing this game took approximately half a year
 * You can view my trello board [here](https://trello.com/b/rUmtAu4S/leldoom)
-* Notice: 
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
 
 ## Needs reworking
