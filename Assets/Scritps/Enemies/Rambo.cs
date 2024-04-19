@@ -196,7 +196,7 @@ public class Rambo : MonoBehaviour
 
         if (!alreadyAttacked)
         {   
-            GameObject bulletObj ;
+            GameObject bulletObj;
             Rigidbody bulletRig;
             Vector3 aimDirection;
 
