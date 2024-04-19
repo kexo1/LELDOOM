@@ -1,23 +1,19 @@
 
 <div align = center>
-# LELDOOM
-<div align = center>
-## Fast-paced arena type FPS game
 
-<div align = center>
+# LELDOOM
+### Fast-paced arena type FPS game
+
 Pickup 5 different permament abilities every wave
-<div align = center>
 <iframe src="https://drive.google.com/file/d/1SGNaZFlRwyBS9XYelmUMeXQJl-e1D2D3/preview" width="640" height="360" allow="autoplay"></iframe>
 
-<div align = center>
 Action gameplay with smooth movement system
-<div align = center>
 <iframe src="https://drive.google.com/file/d/1tkUQO3B-f3RJ912Fz3UUlqUrXwoJ_K62/preview" width="640" height="360" allow="autoplay"></iframe>
 
-<div align = center>
 Find beers for temporary boosts
-<div align = center>
 <iframe src="https://drive.google.com/file/d/1jRWT4TAYEHvc8iNFVD-1kiPG3Ae6Xkzf/preview" width="640" height="360" allow="autoplay"></iframe>
+
+<div align = left>
 
 ##  Features
 * Fast and smooth movement with bunny-hop and sliding mechanics
