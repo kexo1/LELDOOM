@@ -33,8 +33,8 @@ Find beers for temporary boosts
 * You can view my trello board [here](https://trello.com/b/rUmtAu4S/leldoom)
 * Notice: 
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
-> **Note**  
-> This game is a simple project of mine, it's never going to be released on any gaming platform.
+> [!NOTE]  
+> This game is a simple project of mine, it's never going to be released on any gaming platform. [!NOTE] 
 
 ## Needs reworking
 * Weapons aren't made in scriptable objects, which makes the code a lot messier
