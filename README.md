@@ -4,18 +4,14 @@
 # LELDOOM
 ### Fast-paced arena type FPS game
 
-
-
-
 Pickup 5 different permament abilities every wave
 <img src="readmeFiles/abilities.gif" alt="Abilities"/>
 
-
 Action gameplay with smooth movement system
-<iframe src="https://drive.google.com/file/d/1tkUQO3B-f3RJ912Fz3UUlqUrXwoJ_K62/preview" width="640" height="360" allow="autoplay"></iframe>
+<img src="readmeFiles/action_gameplay.gif" alt="Gameplay"/>
 
 Find beers for temporary boosts
-<iframe src="https://drive.google.com/file/d/1jRWT4TAYEHvc8iNFVD-1kiPG3Ae6Xkzf/preview" width="640" height="360" allow="autoplay"></iframe>
+<img src="readmeFiles/pickables.gif" alt="Pickables"/>
 
 <div align = left>
 
@@ -39,6 +35,7 @@ Find beers for temporary boosts
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
 
 > [!NOTE]
+>
 > This game is a simple project of mine, it's never going to be released on any gaming platform.
 
 ## Needs reworking
