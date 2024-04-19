@@ -36,6 +36,7 @@ Find beers for temporary boosts
 * You can view my trello board [here](https://trello.com/b/rUmtAu4S/leldoom)
 * Notice: 
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
+
 > [!NOTE]
 > This game is a simple project of mine, it's never going to be released on any gaming platform.
 
