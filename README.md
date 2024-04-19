@@ -8,7 +8,7 @@
 
 
 Pickup 5 different permament abilities every wave
-![image](https://drive.google.com/uc?export=view&id=1SGNaZFlRwyBS9XYelmUMeXQJl-e1D2D3)
+![image](https://drive.usercontent.google.com/download?id=1SGNaZFlRwyBS9XYelmUMeXQJl-e1D2D3&export=view&authuser=0)
 
 Action gameplay with smooth movement system
 <iframe src="https://drive.google.com/file/d/1tkUQO3B-f3RJ912Fz3UUlqUrXwoJ_K62/preview" width="640" height="360" allow="autoplay"></iframe>
