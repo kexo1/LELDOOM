@@ -24,15 +24,17 @@ Find beers for temporary boosts
 * 15 waves, every three waves you get new weapon
 
 ## Download
-* Clone repository locally
+* Clone repository locally: 
 `https://github.com/kexo1/LELDOOM.git`
 
 ##  More about this game
 * I made this game as my final school year work, I had to learn basics of Unity and C# by myself
 * Developing this game took approximately half a year
 * You can view my trello board [here](https://trello.com/b/rUmtAu4S/leldoom)
-* Notice: this game is a simple project of mine, it's never going to be released on any gaming platform
+* Notice: 
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
+> [!NOTE]
+> This game is a simple project of mine, it's never going to be released on any gaming platform.
 
 ## Needs reworking
 * Weapons aren't made in scriptable objects, which makes the code a lot messier
