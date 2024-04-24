@@ -290,14 +290,12 @@ MonoBehaviour:
   weaponManager: {fileID: 0}
   audioManager: {fileID: 0}
   muzzleFlash: {fileID: 552345825855181131}
-  loopEndSound: {fileID: 8300000, guid: ca4f0a74263770446a8cd8ca52304ce0, type: 3}
-  emptyMagSound: {fileID: 8300000, guid: fffd9ffa13a9e114788cac404ce52580, type: 3}
   backround: {fileID: 0}
   slide: {fileID: 0}
   magazine: {fileID: 8413592690841329894}
   smokePuff: {fileID: 0}
   hitParticle: {fileID: 0}
-  damage: 11
+  damage: 12
   fireRate: 13
   hitForce: 5
   reloadSpeed: 2.5
@@ -320,6 +318,8 @@ MonoBehaviour:
   slideEndPosition: {x: 0, y: 0, z: 0}
   magazineReloadPosition: {x: 0, y: -5, z: 0}
   slideMoveTime: 0
+  loopEndSound: {fileID: 8300000, guid: ca4f0a74263770446a8cd8ca52304ce0, type: 3}
+  emptyMagSound: {fileID: 8300000, guid: fffd9ffa13a9e114788cac404ce52580, type: 3}
   shootSound:
   - {fileID: 8300000, guid: 40551c6406630ab49b2a8ad43cc752a8, type: 3}
   - {fileID: 8300000, guid: 1e0435c5fb435de43bfc28da9b033a82, type: 3}
@@ -393,9 +393,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5922622823359544968, guid: 821fe807e94b35c4392c574add0d5b96, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -242165637326713887, guid: 821fe807e94b35c4392c574add0d5b96, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 821fe807e94b35c4392c574add0d5b96, type: 3}
       propertyPath: m_Name
       value: TommyGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 821fe807e94b35c4392c574add0d5b96, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

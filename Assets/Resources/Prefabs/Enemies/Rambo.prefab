@@ -168,8 +168,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 11
-  m_Acceleration: 88
+  m_Speed: 6
+  m_Acceleration: 48
   avoidancePriority: 50
   m_AngularSpeed: 200
   m_StoppingDistance: 0
@@ -240,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: -7064463516015853043}
   audioSource: {fileID: 6403184905164496608}
+  sfxMixer: {fileID: 24100000, guid: 0cfeda236cca7a944b1afd0877e721d1, type: 2}
   enemyAmbushSound: {fileID: 8300000, guid: 0f3f3e33a31bef54b888269493f62e2b, type: 3}
   deathSound: {fileID: 8300000, guid: 95aca2f4ed5998b448209fb47efa08fa, type: 3}
   shootSound: {fileID: 8300000, guid: 744985095613eb246ab7740dcb16f29b, type: 3}
@@ -253,10 +254,10 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 5
-  timeBetweenAttacks: 0.1
-  reloadTime: 1
-  maxAmmo: 30
-  ability: 1
+  timeBetweenAttacks: 0.4
+  reloadTime: 2
+  maxAmmo: 20
+  ability: 0
   playerInSightRange: 0
   ambushed: 1
   playerInAttackRange: 0

@@ -2,12 +2,14 @@ using Vector3 = UnityEngine.Vector3;
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class Runner : MonoBehaviour
 {   
     [Header("References")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioMixer sfxMixer;
     [SerializeField] private AudioClip enemyAmbushSound;
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip spottedSound;
@@ -224,6 +226,7 @@ public class Runner : MonoBehaviour
         GameObject soundObject = new("DeathSoundObject");
 
         AudioSource tempAudioSource = soundObject.AddComponent<AudioSource>();
+        tempAudioSource.outputAudioMixerGroup = sfxMixer.FindMatchingGroups("SFX")[0];
         tempAudioSource.PlayOneShot(deathSound);
 
         if (Random.Range(0, 3) == 1)

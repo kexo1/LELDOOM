@@ -19,10 +19,13 @@ public class CameraEffects : MonoBehaviour
     [Header("Speed Effect")]
     [SerializeField] private float EmissionMultiplier;
     [SerializeField] private float EmissionBase;
+    private float horizontalInput;
 
     [System.Obsolete]
     private void Update()
     {   
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
         SpeedEffect();
         CameraRotation();
         FixCameraClipping();
@@ -50,12 +53,7 @@ public class CameraEffects : MonoBehaviour
     private void CameraRotation()
     {
         playerCamera.transform.localRotation = Quaternion.Slerp(playerCamera.transform.localRotation, Quaternion.identity, 5f * Time.deltaTime);
-
-        if (Input.GetKey(KeyCode.D))
-            playerCamera.transform.localRotation *= Quaternion.Euler(new Vector3(0 , 0, -cameraRotationSize));
-
-        if (Input.GetKey(KeyCode.A))
-            playerCamera.transform.localRotation *= Quaternion.Euler(new Vector3(0, 0, cameraRotationSize));
+        playerCamera.transform.localRotation *= Quaternion.Euler(new Vector3(0 , 0, -1 * horizontalInput * cameraRotationSize));
     }
 
     private void FixCameraClipping()

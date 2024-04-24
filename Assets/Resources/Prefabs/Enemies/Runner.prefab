@@ -194,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 2904868144010371557}
   audioSource: {fileID: 5322225715911448212}
+  sfxMixer: {fileID: 24100000, guid: 0cfeda236cca7a944b1afd0877e721d1, type: 2}
   enemyAmbushSound: {fileID: 8300000, guid: 0f3f3e33a31bef54b888269493f62e2b, type: 3}
   deathSound: {fileID: 8300000, guid: ae87ff2d7f4223343939f0214676087a, type: 3}
   spottedSound: {fileID: 8300000, guid: a93ef74687b059f438e81937d26bc654, type: 3}
@@ -207,7 +208,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 5
-  damage: 5
+  damage: 15
   timeBetweenAttacks: 2
   ability: 0
   dashSpeedMultiplier: 10

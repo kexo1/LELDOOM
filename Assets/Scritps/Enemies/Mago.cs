@@ -1,12 +1,14 @@
 using Vector3 = UnityEngine.Vector3;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Audio;
 
 public class Mago : MonoBehaviour
 {   
     [Header("References")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioMixer sfxMixer;
     [SerializeField] private AudioClip enemyAmbushSound;
     [SerializeField] private AudioClip enemyHitSound;
     [SerializeField] private AudioClip deathSound;
@@ -48,6 +50,7 @@ public class Mago : MonoBehaviour
 
     private void Start() 
     {
+        // Not an optimal way of loading variables
         playerObject = GameObject.Find("PlayerObject").GetComponent<Transform>();
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
@@ -199,11 +202,12 @@ public class Mago : MonoBehaviour
 
     public void KillEnemy()
     {
+        // Unnesessary creating another temp sound object, should reuse one (i'm lazy)
         GameObject bloodExplosionParticle = Instantiate(bloodExplosion, transform.position, Quaternion.identity);
 
         GameObject soundObject = new("DeathSoundObject");
         AudioSource tempAudioSource = soundObject.AddComponent<AudioSource>();
-        tempAudioSource.spread = 100f;
+        tempAudioSource.outputAudioMixerGroup = sfxMixer.FindMatchingGroups("SFX")[0];
         tempAudioSource.PlayOneShot(deathSound);
 
         if (Random.Range(0, 3) == 1)

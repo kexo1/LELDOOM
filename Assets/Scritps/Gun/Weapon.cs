@@ -142,7 +142,6 @@ public class Weapon : MonoBehaviour
 
     private void MyInput()
     {   
-        // Weapon shooting is impossible to be done in FixedUpdate :( because of input timings
         scoping = Input.GetMouseButton(1) && !reloading;
 
         if (Input.GetKeyUp(KeyCode.R) && !reloading && ammo < magSize && allAmmo != 0 && gameObject.activeSelf)

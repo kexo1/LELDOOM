@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 3909406480251704985}
   audioSource: {fileID: 7469188791648436290}
+  sfxMixer: {fileID: 24100000, guid: 0cfeda236cca7a944b1afd0877e721d1, type: 2}
   enemyAmbushSound: {fileID: 8300000, guid: 0f3f3e33a31bef54b888269493f62e2b, type: 3}
   enemyHitSound: {fileID: 8300000, guid: 2b3735957f8b36c478aae96966d647e1, type: 3}
   deathSound: {fileID: 8300000, guid: a90e37d29ff95f2438ab8a6ce4a4d78e, type: 3}

@@ -44,13 +44,13 @@ Find beers for temporary boosts
 * Rewrite settings save system, replace Prefs with JSON saving
 * Optimize interaction detection
 * Rewrite Wave script
-* Game isn't optimized, I've tried occlusion culling, batching, GPU instancing, setting static objects - nothing helped, more likely deep Unity issue
+* Game isn't optimized, I've tried occlusion culling, batching, GPU instancing, setting static objects - nothing helped, more likely deeper Unity issue
 
 ## Credits
 * [ScreamingBrainStudios](https://screamingbrainstudios.itch.io/) - old school textures
 * [Elbolilloduro](https://elbolilloduro.itch.io/) - PSX style models
 * [GGBotNet](https://ggbot.itch.io/) - PSX style cars
-* [TheRealSwirls](therealswirls.itch.io/) - PSX horror music
+* [TheRealSwirls](https://therealswirls.itch.io/) - PSX horror music
 * [Doctor_sci3nce](https://doctor-sci3nce.itch.io/) - PSX style ammo and weapons
 * [obliviist](https://obliviist.itch.io/) - Capybara model :3
 * [Wildenza](https://wildenza.itch.io/) - PSX Malorian gun model

@@ -1038,7 +1038,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579042146585468767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.06
   m_Speed: 30
@@ -1060,13 +1060,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579042146585468767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81d6a0515bb3c714e91f9310cb7148e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2904868144010371557, guid: f3dd072d5cb7e284eb28901fd9aad07e, type: 3}
   audioSource: {fileID: 5322225715911448212, guid: f3dd072d5cb7e284eb28901fd9aad07e, type: 3}
+  sfxMixer: {fileID: 0}
   enemyAmbushSound: {fileID: 0}
   deathSound: {fileID: 8300000, guid: ae87ff2d7f4223343939f0214676087a, type: 3}
   spottedSound: {fileID: 0}
@@ -1089,6 +1090,7 @@ MonoBehaviour:
   playerInAttackRange: 0
   sightRange: 200
   attackRange: 10
+  playerIsVisible: 0
 --- !u!114 &2714951788057690174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1098,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579042146585468767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee9fa49d8c4252847ab6d7cb0133d52b, type: 3}
   m_Name: 
@@ -1142,7 +1144,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579042146585468767}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2284165863974061069, guid: 0cfeda236cca7a944b1afd0877e721d1, type: 2}
   m_audioClip: {fileID: 0}

@@ -104,7 +104,7 @@ public class PlayerUI : MonoBehaviour
         pauseMenu.SetActive(true);
 
         // This button forgets it's state so after you close options menu, 
-        // and repopen menu, the button has colour like it's pressed. I have no fucking clue
+        // and repopen menu, the button has colour like it's pressed. I have no clue
         // why it is the only button which does that.
 
         if (EventSystem.current.currentSelectedGameObject == optionsButton.gameObject)

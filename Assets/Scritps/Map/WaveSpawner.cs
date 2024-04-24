@@ -104,7 +104,7 @@ public class WaveSpawner : MonoBehaviour
         waveCountdown = timeBetweenWaves;
         settings.SetWave(true);
         spawnPosts = GetComponentsInChildren<Transform>();
-        pickWave = UnityEngine.Random.Range(5, 11);
+        pickWave = UnityEngine.Random.Range(5, 12);
         NextWave();
     }
 
