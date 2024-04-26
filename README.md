@@ -44,6 +44,8 @@ Find beers for temporary boosts
 * Rewrite settings save system, replace Prefs with JSON saving
 * Optimize interaction detection
 * Rewrite Wave script
+* Agent colliders are moving from it's place
+* OnCollisionEnter or OnTriggerEnter functions should be only in one script rather than on multiple scripts
 * Game isn't optimized, I've tried occlusion culling, batching, GPU instancing, setting static objects - nothing helped, more likely deeper Unity issue
 
 ## Credits
