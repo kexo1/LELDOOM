@@ -34,7 +34,7 @@ Find beers for temporary boosts
 * You can view my trello board [here](https://trello.com/b/rUmtAu4S/leldoom)
 * If you find any problem, solution, or you need help with something, message me at discord: _kexo
 
-## Needs reworking
+## Needs reworking and fixing
 * Weapons aren't made in scriptable objects, which makes the code a lot messier
 * PlayerMovement and Sliding scripts need to be merged into one
 * Sliding sometimes bugs out on slopes
@@ -44,8 +44,10 @@ Find beers for temporary boosts
 * Rewrite settings save system, replace Prefs with JSON saving
 * Optimize interaction detection
 * Rewrite Wave script
+* Make scripts that manage basic and repetetive operations (StateManagers)
 * Agent colliders are moving from it's place
 * OnCollisionEnter or OnTriggerEnter functions should be only in one script rather than on multiple scripts
+* SphereCast functions not working properly on enemy sight detection, RayCast function is not ideal for projectiles
 * Game isn't optimized, I've tried occlusion culling, batching, GPU instancing, setting static objects - nothing helped, more likely deeper Unity issue
 
 ## Credits
@@ -60,4 +62,5 @@ Find beers for temporary boosts
 * [Kamelionn](https://kamelionn.itch.io/) - PSX style TommyGun and MG3 weapon models
 * [forst](https://assetstore.unity.com/publishers/408) - Detailed tree models
 * [Staggart Creations](https://assetstore.unity.com/publishers/15580) - Stylized grass shader
+* [ATOMICU3D](https://assetstore.unity.com/publishers/13222) - Towers pack
 * Thank you DDuck for helping me fix certains problems I encountered
