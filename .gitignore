@@ -84,3 +84,13 @@ ignore.conf
 # Logs
 debug.log
 desktop.ini
+
+# Potential licensed audio tracks
+/Assets/Resources/Sounds/Music/ArenaCastleColiseum - Pixel Gun 3D (High Quality).mp3
+/Assets/Resources/Sounds/Music/ArenaCastleColiseum - Pixel Gun 3D (High Quality).mp3.meta
+/Assets/Resources/Sounds/Music/Ashes to Ashes, Dusk to Dusk.mp3
+/Assets/Resources/Sounds/Music/Ashes to Ashes, Dusk to Dusk.mp3.meta
+/Assets/Resources/Sounds/Music/Deadly Arena - Pixel Gun 3D Soundtrack.mp3
+/Assets/Resources/Sounds/Music/Deadly Arena - Pixel Gun 3D Soundtrack.mp3.meta
+/Assets/Resources/Sounds/Music/Dusk.mp3
+/Assets/Resources/Sounds/Music/Dusk.mp3.meta
