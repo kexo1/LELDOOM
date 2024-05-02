@@ -297,7 +297,7 @@ MonoBehaviour:
   hitParticle: {fileID: 0}
   damage: 80
   fireRate: 1.5
-  hitForce: 12
+  hitForce: 40
   reloadSpeed: 1.2
   magSize: 8
   allAmmo: 8

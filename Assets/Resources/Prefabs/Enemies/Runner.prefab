@@ -168,8 +168,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 8
-  m_Acceleration: 40
+  m_Speed: 9
+  m_Acceleration: 45
   avoidancePriority: 50
   m_AngularSpeed: 220
   m_StoppingDistance: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 5
-  damage: 15
+  damage: 5
   timeBetweenAttacks: 2
   ability: 0
   dashSpeedMultiplier: 10

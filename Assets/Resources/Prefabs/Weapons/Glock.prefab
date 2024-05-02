@@ -297,7 +297,7 @@ MonoBehaviour:
   hitParticle: {fileID: 0}
   damage: 17
   fireRate: 7
-  hitForce: 4
+  hitForce: 30
   reloadSpeed: 1.5
   magSize: 20
   allAmmo: 20
@@ -3891,7 +3891,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 99
+  m_VersionIndex: 105
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

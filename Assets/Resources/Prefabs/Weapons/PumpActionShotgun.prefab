@@ -290,8 +290,6 @@ MonoBehaviour:
   weaponManager: {fileID: 0}
   audioManager: {fileID: 0}
   muzzleFlash: {fileID: 1913269532930199752}
-  loopEndSound: {fileID: 0}
-  emptyMagSound: {fileID: 8300000, guid: d39ae5b64f555e042a15f66722cc81f2, type: 3}
   backround: {fileID: 0}
   slide: {fileID: 1608846773457025363}
   magazine: {fileID: 0}
@@ -299,7 +297,7 @@ MonoBehaviour:
   hitParticle: {fileID: 0}
   damage: 91
   fireRate: 1.2
-  hitForce: 20
+  hitForce: 40
   reloadSpeed: 0.4
   magSize: 8
   allAmmo: 8
@@ -320,6 +318,8 @@ MonoBehaviour:
   slideEndPosition: {x: 0.4, y: 0, z: 0}
   magazineReloadPosition: {x: 0, y: 0, z: 0}
   slideMoveTime: 0.5
+  loopEndSound: {fileID: 0}
+  emptyMagSound: {fileID: 8300000, guid: d39ae5b64f555e042a15f66722cc81f2, type: 3}
   shootSound:
   - {fileID: 8300000, guid: 010652aec35e84e468a2f5ee610e5377, type: 3}
   - {fileID: 8300000, guid: 5cebc28160ef21540ac55b4ceca37ffc, type: 3}
@@ -335,11 +335,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 515070136a78b1443855308f4b6e9619, type: 3}
   - {fileID: 8300000, guid: db7420e7d4583a546a8809fcafa97c4f, type: 3}
   - {fileID: 8300000, guid: 3946e0b104084314c88a4714e7f2e34a, type: 3}
-  weaponGfxLayer: 8
-  weaponGfxs:
-  - {fileID: 1652369838400558259}
-  - {fileID: 1608846773457025363}
-  - {fileID: 2515855465655608209}
   _ammoText: {fileID: 0}
 --- !u!1001 &2094281288248208839
 PrefabInstance:
@@ -393,17 +388,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slide
       objectReference: {fileID: 0}
+    - target: {fileID: -8411699214803250028, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4613237930815091114, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
       propertyPath: m_Name
       value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: -4613237930815091114, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 864132719668853108, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
       propertyPath: m_Name
       value: Gun
       objectReference: {fileID: 0}
+    - target: {fileID: 864132719668853108, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
       propertyPath: m_Name
       value: PumpActionShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -417,18 +428,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8411699214803250028, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
   m_PrefabInstance: {fileID: 2094281288248208839}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1652369838400558259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 864132719668853108, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
-  m_PrefabInstance: {fileID: 2094281288248208839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1917082915568962092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
-  m_PrefabInstance: {fileID: 2094281288248208839}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2515855465655608209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4613237930815091114, guid: e0e24634446f3f841b43c6290e7a7e45, type: 3}
   m_PrefabInstance: {fileID: 2094281288248208839}
   m_PrefabAsset: {fileID: 0}

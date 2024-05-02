@@ -63,4 +63,5 @@ Find beers for temporary boosts
 * [forst](https://assetstore.unity.com/publishers/408) - Detailed tree models
 * [Staggart Creations](https://assetstore.unity.com/publishers/15580) - Stylized grass shader
 * [ATOMICU3D](https://assetstore.unity.com/publishers/13222) - Towers pack
+* [onemansymphony](https://onemansymphony.bandcamp.com/music) - DOOM like soundtrack
 * Thank you DDuck for helping me fix certains problems I encountered

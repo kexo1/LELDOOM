@@ -258,8 +258,6 @@ MonoBehaviour:
   weaponManager: {fileID: 0}
   audioManager: {fileID: 0}
   muzzleFlash: {fileID: 8781356873215683505}
-  loopEndSound: {fileID: 0}
-  emptyMagSound: {fileID: 8300000, guid: 8ab6a5d6760c3714386f06acbce8bad3, type: 3}
   backround: {fileID: 0}
   slide: {fileID: 0}
   magazine: {fileID: 1995166560704921227}
@@ -267,7 +265,7 @@ MonoBehaviour:
   hitParticle: {fileID: 0}
   damage: 18
   fireRate: 11
-  hitForce: 5
+  hitForce: 20
   reloadSpeed: 1.5
   magSize: 30
   allAmmo: 30
@@ -288,6 +286,8 @@ MonoBehaviour:
   slideEndPosition: {x: 0, y: 0, z: 0}
   magazineReloadPosition: {x: 0, y: -2, z: 0}
   slideMoveTime: 0
+  loopEndSound: {fileID: 0}
+  emptyMagSound: {fileID: 8300000, guid: 8ab6a5d6760c3714386f06acbce8bad3, type: 3}
   shootSound:
   - {fileID: 8300000, guid: 104755200ced6ff4880a25abc0dc37a9, type: 3}
   reloadOutSound:
@@ -299,10 +299,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 63cbffd4cc602e04bb890aa64ac7b239, type: 3}
   - {fileID: 8300000, guid: 78e3fadfe6386014fbffb87b7cdb95c8, type: 3}
   chokeSound: []
-  weaponGfxLayer: 8
-  weaponGfxs:
-  - {fileID: 3095405958558865914}
-  - {fileID: 1995166560704921227}
   _ammoText: {fileID: 0}
 --- !u!1 &8434394600913770337
 GameObject:
@@ -400,13 +396,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magazine
       objectReference: {fileID: 0}
+    - target: {fileID: -8579651058086661664, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
       propertyPath: m_Name
       value: AK74U
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4155594210927056529, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155594210927056529, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -424,10 +432,5 @@ Transform:
 --- !u!1 &1995166560704921227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8579651058086661664, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
-  m_PrefabInstance: {fileID: 1395752750762774379}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3095405958558865914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4155594210927056529, guid: 7c9a73c92f7d1b748ab521f4479a9552, type: 3}
   m_PrefabInstance: {fileID: 1395752750762774379}
   m_PrefabAsset: {fileID: 0}

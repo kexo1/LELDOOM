@@ -295,9 +295,9 @@ MonoBehaviour:
   magazine: {fileID: 8413592690841329894}
   smokePuff: {fileID: 0}
   hitParticle: {fileID: 0}
-  damage: 12
+  damage: 11
   fireRate: 13
-  hitForce: 5
+  hitForce: 20
   reloadSpeed: 2.5
   magSize: 50
   allAmmo: 50
