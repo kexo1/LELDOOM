@@ -24,7 +24,8 @@ Find beers for temporary boosts
 * 15 waves, every three waves you get new weapon
 
 ## Download
-* Clone repository locally: 
+* Download from [Itch.io](https://kexo1.itch.io/leldoom)
+* OR Clone repository locally: 
 `https://github.com/kexo1/LELDOOM.git`
 
 ##  More about this game

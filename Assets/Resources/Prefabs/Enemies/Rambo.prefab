@@ -168,8 +168,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 11
-  m_Acceleration: 88
+  m_Speed: 6
+  m_Acceleration: 48
   avoidancePriority: 50
   m_AngularSpeed: 200
   m_StoppingDistance: 0
@@ -254,10 +254,10 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 5
-  timeBetweenAttacks: 0.1
-  reloadTime: 1
-  maxAmmo: 30
-  ability: 1
+  timeBetweenAttacks: 0.4
+  reloadTime: 2
+  maxAmmo: 20
+  ability: 0
   playerInSightRange: 0
   ambushed: 1
   playerInAttackRange: 0
