@@ -49,6 +49,7 @@ Find beers for temporary boosts
 * Agent colliders are moving from it's place
 * OnCollisionEnter or OnTriggerEnter functions should be only in one script rather than on multiple scripts
 * SphereCast functions not working properly on enemy sight detection, RayCast function is not ideal for projectiles
+* Enemies merge into one group
 * Game isn't optimized, I've tried occlusion culling, batching, GPU instancing, setting static objects - nothing helped, more likely deeper Unity issue
 
 ## Credits
