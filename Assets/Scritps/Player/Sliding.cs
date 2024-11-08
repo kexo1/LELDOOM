@@ -60,7 +60,7 @@ public class Sliding : MonoBehaviour
         UpdateColliderHeight();
         
         // If player crashes into a wall, player been sliding too long
-        if (pm.sliding && rigidBody.velocity.magnitude < 2f)
+        if (pm.sliding && rigidBody.linearVelocity.magnitude < 2f)
             StopSlide(); 
                        
     }
@@ -85,7 +85,7 @@ public class Sliding : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(slideKey) && !pm.sliding && rigidBody.velocity.magnitude > 10f && readyToSlide)
+        if (Input.GetKeyDown(slideKey) && !pm.sliding && rigidBody.linearVelocity.magnitude > 10f && readyToSlide)
             StartSlide();
 
         if (Input.GetKeyUp(slideKey) && pm.sliding)
@@ -115,7 +115,7 @@ public class Sliding : MonoBehaviour
 
     private void SlidingMovement()
     {   
-        if(!pm.OnSlope() | rigidBody.velocity.y > -0.1f)
+        if(!pm.OnSlope() | rigidBody.linearVelocity.y > -0.1f)
             slideTimer -= Time.deltaTime;
         else
             // If on slope, accelerate player going down

@@ -35,7 +35,7 @@ public class CameraEffects : MonoBehaviour
     private void SpeedEffect()
     {
         float fovBase = PlayerPrefs.GetInt("fovValue");
-        float rbSpeed = rigidBody.velocity.magnitude;
+        float rbSpeed = rigidBody.linearVelocity.magnitude;
         speedEffect.transform.SetPositionAndRotation(playerCamera.transform.position + playerCamera.transform.forward * 1.3f, playerCamera.transform.rotation);
         
         if (rbSpeed > 16f)
@@ -60,7 +60,7 @@ public class CameraEffects : MonoBehaviour
     {
         cameraHolder.localPosition = Vector3.Lerp(cameraHolder.localPosition, new Vector3(0, cameraHeightTarget, 0), Time.deltaTime * 4);
 
-        if (rigidBody.velocity.y < -0.1f)
+        if (rigidBody.linearVelocity.y < -0.1f)
             cameraHeightTarget = 0.6f;
         else
             cameraHeightTarget = 0.3f;

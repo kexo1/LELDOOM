@@ -208,7 +208,7 @@ public class Rambo : MonoBehaviour
                 bulletObj = Instantiate(projectileLead, transform.position + Vector3.up, Quaternion.identity);
                 bulletRig = bulletObj.GetComponent<Rigidbody>();
 
-                Vector3 predictedPos = playerPos.position + Vector3.down + playerRb.velocity * (Vector3.Distance(transform.position, playerPos.position) / 32f);
+                Vector3 predictedPos = playerPos.position + Vector3.down + playerRb.linearVelocity * (Vector3.Distance(transform.position, playerPos.position) / 32f);
                 aimDirection = (predictedPos - transform.position).normalized;
             }
             else

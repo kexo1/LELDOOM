@@ -115,14 +115,14 @@ public class PlayerMovement : MonoBehaviour
                 isFalling = false;
             }
             
-            rigidBody.drag = groundDrag;
+            rigidBody.linearDamping = groundDrag;
             timeOnGround = groundTimer;
         } 
         else
         {
             isFalling = true;
             timeOnGround -= Time.deltaTime;
-            rigidBody.drag = 0;        
+            rigidBody.linearDamping = 0;        
         }
     }
 
@@ -150,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
             // If jumped during slide
             if (sliding) slideScript.StopSlide();
 
-            if (jumpBufferCounter < 0.2f && !OnSlope() && rigidBody.velocity.magnitude > 11f)
+            if (jumpBufferCounter < 0.2f && !OnSlope() && rigidBody.linearVelocity.magnitude > 11f)
             {
                 if (jumpStrike < maxJumpStrikes) 
                     jumpStrike += 1;
@@ -189,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
         if (sliding)
         {
             state = MovementState.sliding;
-            if(OnSlope() && rigidBody.velocity.y < 0.1f)
+            if(OnSlope() && rigidBody.linearVelocity.y < 0.1f)
                 desiredMoveSpeed = maxSlideSlopeSpeed;
             // If timer above slide time, then start slowing down
             else if (slideScript.slideTimer > 0f)
@@ -217,7 +217,7 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.air;
 
-            if (rigidBody.velocity.y < -0.1f)
+            if (rigidBody.linearVelocity.y < -0.1f)
                 capsuleCollider.height = 2f;
             else
                 capsuleCollider.height = 1;
@@ -278,7 +278,7 @@ public class PlayerMovement : MonoBehaviour
         if(OnSlope() && !exitingSlope) 
         {
             rigidBody.AddForce(10 * moveSpeed * GetSlopeMoveDirection(moveDirection), ForceMode.Force);
-            if (rigidBody.velocity.y > 0)
+            if (rigidBody.linearVelocity.y > 0)
                 rigidBody.AddForce(Vector3.down * 80f, ForceMode.Force);
         }
         else if(isGrounded && sliding && 0f < slideScript.slideTimer)
@@ -291,24 +291,24 @@ public class PlayerMovement : MonoBehaviour
             rigidBody.AddForce(10f * airMultiplier * moveSpeed * moveDirection.normalized, ForceMode.Force);
 
         rigidBody.useGravity = !OnSlope();
-        playerSpeed.text = $"{Math.Round(rigidBody.velocity.magnitude, 1)}";
+        playerSpeed.text = $"{Math.Round(rigidBody.linearVelocity.magnitude, 1)}";
     }
 
     private void SpeedControl()
     {   
         if (OnSlope() && !exitingSlope)
         {
-            if(rigidBody.velocity.magnitude > moveSpeed)
-                rigidBody.velocity = rigidBody.velocity.normalized * moveSpeed;
+            if(rigidBody.linearVelocity.magnitude > moveSpeed)
+                rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * moveSpeed;
         }
         else
         {
-            Vector3 flatVel = new(rigidBody.velocity.x, 0f, rigidBody.velocity.z);
+            Vector3 flatVel = new(rigidBody.linearVelocity.x, 0f, rigidBody.linearVelocity.z);
 
             if(flatVel.magnitude > moveSpeed)
             {
                 Vector3 limitedVel = flatVel.normalized * moveSpeed;
-                rigidBody.velocity = new Vector3(limitedVel.x, rigidBody.velocity.y, limitedVel.z);
+                rigidBody.linearVelocity = new Vector3(limitedVel.x, rigidBody.linearVelocity.y, limitedVel.z);
             }
         }
     }
@@ -317,7 +317,7 @@ public class PlayerMovement : MonoBehaviour
     {   
         readyToJump = false;
         exitingSlope = true;
-        rigidBody.velocity = new Vector3(rigidBody.velocity.x, 0f, rigidBody.velocity.z);
+        rigidBody.linearVelocity = new Vector3(rigidBody.linearVelocity.x, 0f, rigidBody.linearVelocity.z);
         rigidBody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
 
@@ -349,14 +349,14 @@ public class PlayerMovement : MonoBehaviour
         {    
             case "JumpPad":
                 exitingSlope = true;
-                rigidBody.velocity = new Vector3(rigidBody.velocity.x, 0f, rigidBody.velocity.z);
+                rigidBody.linearVelocity = new Vector3(rigidBody.linearVelocity.x, 0f, rigidBody.linearVelocity.z);
                 
                 // Get the normal of the collision surface
                 Vector3 collisionNormal = hit.contacts[0].normal;
 
                 Vector3 launchDirection = collisionNormal;
 
-                rigidBody.velocity = Vector3.zero; 
+                rigidBody.linearVelocity = Vector3.zero; 
                 rigidBody.AddForce(5 * jumpForce * launchDirection, ForceMode.Impulse);
 
                 audioManager.PlaySFX(audioManager.jumpPadSound);

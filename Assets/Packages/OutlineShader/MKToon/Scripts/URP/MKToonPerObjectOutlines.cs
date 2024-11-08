@@ -10,13 +10,13 @@ namespace MK.Toon.URP
         private const string _componentName = "MKToonPerObjectOutlines";
         private const string _shaderPassName = "MKToonOutline";
 
-        private UnityEngine.Experimental.Rendering.Universal.RenderObjects _renderObjectsFeature;
+        private UnityEngine.Rendering.Universal.RenderObjects _renderObjectsFeature;
 
         public LayerMask _layerMask = -1;
 
         public override void Create()
         {
-            _renderObjectsFeature = ScriptableObject.CreateInstance<UnityEngine.Experimental.Rendering.Universal.RenderObjects>();
+            _renderObjectsFeature = ScriptableObject.CreateInstance<UnityEngine.Rendering.Universal.RenderObjects>();
             _renderObjectsFeature.settings.passTag = _componentName;
             name = _componentName;
             _renderObjectsFeature.settings.filterSettings.LayerMask = _layerMask;

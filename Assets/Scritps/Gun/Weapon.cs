@@ -191,7 +191,7 @@ public class Weapon : MonoBehaviour
 
         // If shooting box, move it
         if (hitInfo.transform.TryGetComponent<Rigidbody>(out var rb))
-            rb.velocity += _playerCamera.forward * hitForce;
+            rb.linearVelocity += _playerCamera.forward * hitForce;
 
         // If anything that is in whatIsGround layer, play dust particle
         if (hitInfo.transform.gameObject.layer == 6)
