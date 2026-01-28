@@ -33,9 +33,9 @@ Find beers for temporary boosts
 `https://github.com/kexo1/LELDOOM.git`
 
 ## More about this game
+
 > [!NOTE]
 > This game is a simple project of mine; it will never be released on any gaming platform.
-
 * I made this game as my final school‑year work, learning the basics of Unity and C# by myself.  
 * Developing this game took approximately half a year.  
 * You can view my Trello board [here](https://trello.com/b/rUmtAu4S/leldoom).  
